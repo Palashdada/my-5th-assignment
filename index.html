@@ -29,13 +29,13 @@
         <div
           class="flex gap-2 w-30 h-13 bg-[#41ff6b1a] justify-center items-center rounded-3xl"
         >
-          <h1>0</h1>
+          <h1 id="heardCount">0</h1>
           <img class="h-7 w-7" src="./assets/heart.png" alt="" />
         </div>
         <div
           class="flex gap-2 w-30 h-13 bg-[#41ff6b1a] justify-center items-center rounded-3xl"
         >
-          <h1>100</h1>
+          <h1 id="coin">100</h1>
           <img class="h-7 w-7" src="./assets/coin.png" alt="" />
         </div>
         <button
@@ -63,16 +63,20 @@
           class="max-w-[436px] h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg"
         >
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/emergency.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">
+          <h2 id="sname1" class="font-bold text-[#111111] text-2xl">
             National Emergency Number
           </h2>
           <h1 class="text-lg text-[#5C5C5C]">National Emergency</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">999</h1>
+          <h1 id="snum1" class="font-bold text-[#111111] text-4xl mb-2">999</h1>
           <h1
             class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
           >
@@ -85,23 +89,30 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call1"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <div class="max-w-[436px]h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/police.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#DFEFFF] rounded-2xl p-3"
+              src="./assets/police.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">
+          <h2 id="sname2" class="font-bold text-[#111111] text-2xl">
             Police Helpline Number
           </h2>
           <h1 class="text-lg text-[#5C5C5C]">Police</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">999</h1>
+          <h1 id="snum2" class="font-bold text-[#111111] text-4xl mb-2">999</h1>
           <h1
             class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
           >
@@ -114,7 +125,10 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call2"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -123,14 +137,20 @@
           class="max-w-[436px] h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg"
         >
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/fire-service.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/fire-service.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">fire service Number</h2>
+          <h2 id="sname3" class="font-bold text-[#111111] text-2xl">
+            fire service Number
+          </h2>
           <h1 class="text-lg text-[#5C5C5C]">fire service</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">999</h1>
+          <h1 id="snum3" class="font-bold text-[#111111] text-4xl mb-2">999</h1>
           <h1
             class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
           >
@@ -143,7 +163,10 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call3"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -152,16 +175,24 @@
           class="max-w-[436px] h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg"
         >
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/ambulance.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/ambulance.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">Ambulance Service</h2>
+          <h2 id="sname4" class="font-bold text-[#111111] text-2xl">
+            Ambulance Service
+          </h2>
           <h1 class="text-lg text-[#5C5C5C]">Ambulance</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">01994-999999</h1>
+          <h1 id="snum4" class="font-bold text-[#111111] text-4xl mb-2">
+            01994-999999
+          </h1>
           <h1
-            class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
+            class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-20 text-lg text-center"
           >
             Health
           </h1>
@@ -172,7 +203,10 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call4"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -181,16 +215,22 @@
           class="max-w-[436px] h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg"
         >
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/emergency.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
           <h2 class="font-bold text-[#111111] text-2xl">
             Women & Child Helpline
           </h2>
-          <h1 class="text-lg text-[#5C5C5C]">Women & Child Helpline</h1>
+          <h1 id="sname5" class="text-lg text-[#5C5C5C]">
+            Women & Child Helpline
+          </h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">109</h1>
+          <h1 id="snum5" class="font-bold text-[#111111] text-4xl mb-2">109</h1>
           <h1
             class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
           >
@@ -203,7 +243,10 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call5"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -212,16 +255,20 @@
           class="max-w-[436px] h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg"
         >
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/emergency.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">
+          <h2 id="sname6" class="font-bold text-[#111111] text-2xl">
             Anti-Corruption Helpline
           </h2>
           <h1 class="text-lg text-[#5C5C5C]">Anti-Corruption</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">106</h1>
+          <h1 id="snum6" class="font-bold text-[#111111] text-4xl mb-2">106</h1>
           <h1
             class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
           >
@@ -234,25 +281,34 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call6"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <div class="max-w-[436px]h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/emergency.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">
+          <h2 id="sname7" class="font-bold text-[#111111] text-2xl">
             Electricity Helpline
           </h2>
           <h1 class="text-lg text-[#5C5C5C]">Electricity Outage</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">16216</h1>
+          <h1 id="snum7" class="font-bold text-[#111111] text-4xl mb-2">
+            16216
+          </h1>
           <h1
-            class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
+            class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-20 text-lg text-center"
           >
             Electricity
           </h1>
@@ -263,7 +319,10 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call7"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
@@ -272,14 +331,22 @@
           class="max-w-[436px] h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg"
         >
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/emergency.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">Brac Helpline</h2>
+          <h2 id="sname8" class="font-bold text-[#111111] text-2xl">
+            Brac Helpline
+          </h2>
           <h1 class="text-lg text-[#5C5C5C]">Brac</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">16445</h1>
+          <h1 id="snum8" class="font-bold text-[#111111] text-4xl mb-2">
+            16445
+          </h1>
           <h1
             class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
           >
@@ -292,23 +359,30 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call8"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
         <div class="max-w-[436px]h-360px bg-[#FFFFFF] rounded-xl p-8 shadow-lg">
           <div class="flex justify-between items-center">
-            <img class="w-8 h-8" src="./assets/emergency.png" alt="" />
-            <i class="fa-regular fa-heart"></i>
+            <img
+              class="w-16 h-16 bg-[#FFE3E2] rounded-2xl p-3"
+              src="./assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart heards"></i>
           </div>
           <br />
-          <h2 class="font-bold text-[#111111] text-2xl">
+          <h2 id="sname9" class="font-bold text-[#111111] text-2xl">
             Bangladesh Railway Helpline
           </h2>
           <h1 class="text-lg text-[#5C5C5C]">Bangladesh Railway</h1>
           <br />
-          <h1 class="font-bold text-[#111111] text-4xl mb-2">163</h1>
+          <h1 id="snum9" class="font-bold text-[#111111] text-4xl mb-2">163</h1>
           <h1
             class="bg-[#F2F2F2] rounded-lg text-[#FFFFFF] w-13 text-lg text-center"
           >
@@ -321,21 +395,26 @@
             >
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]">
+            <button
+              id="call9"
+              class="w-full h-10 rounded-lg bg-[#00A63E] text-[#FFFFFF]"
+            >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
       </div>
+      <!-- History -->
       <div class="h-full w-1/5 shadow-lg rounded-xl">
-        <div class="flex justify-between items-center max-w-[400px]">
+        <div class="flex justify-between items-center p-3">
           <h1><i class="fa-regular fa-clock"></i>Call History</h1>
           <button class="w-[114px] h-13 rounded-3xl bg-[#00A63E] text-white">
             Clear
           </button>
         </div>
-        <div></div>
+        <div id="HistoryList"></div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
