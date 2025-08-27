@@ -22,7 +22,7 @@ function coins(sname, snum) {
   let newCoin = avCoinNum - 20;
   avCoin.innerText = newCoin;
   let serviceName = document.getElementById(sname).innerText;
-  let serviceNum = parseInt(document.getElementById(snum).innerText);
+  let serviceNum = document.getElementById(snum).innerText;
   alert(`Calling ${serviceName}  ${serviceNum} `);
 
   let history = document.getElementById("HistoryList");
@@ -64,4 +64,9 @@ document.getElementById("call8").addEventListener("click", function () {
 });
 document.getElementById("call9").addEventListener("click", function () {
   coins("sname9", "snum9");
+});
+// Clear
+document.getElementById("clear").addEventListener("click", function () {
+  let history = document.getElementById("HistoryList");
+  history.innerHTML = "";
 });
