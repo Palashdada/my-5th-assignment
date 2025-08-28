@@ -23,7 +23,7 @@ function coins(sname, snum) {
   avCoin.innerText = newCoin;
   let serviceName = document.getElementById(sname).innerText;
   let serviceNum = document.getElementById(snum).innerText;
-  alert(`Calling ${serviceName}  ${serviceNum} `);
+  alert(` 📞 Calling ${serviceName}  ${serviceNum} `);
 
   let history = document.getElementById("HistoryList");
   let entry = document.createElement("div");
@@ -69,4 +69,50 @@ document.getElementById("call9").addEventListener("click", function () {
 document.getElementById("clear").addEventListener("click", function () {
   let history = document.getElementById("HistoryList");
   history.innerHTML = "";
+});
+
+// reuseable Funtion
+function copyAlart(snum) {
+  let num = document.getElementById(snum).innerText;
+  navigator.clipboard.writeText(num);
+  alert(`Number is copied : ${num}`);
+}
+// Copy
+let copys = document.getElementsByClassName("copys");
+for (let copy of copys) {
+  copy.addEventListener("click", function () {
+    let avCopyCount = document.getElementById("copyCount");
+    let avCopyCountNum = parseInt(
+      document.getElementById("copyCount").innerText
+    );
+    let count = avCopyCountNum + 1;
+    avCopyCount.innerText = count;
+  });
+}
+document.getElementById("copy1").addEventListener("click", function () {
+  copyAlart("snum1");
+});
+document.getElementById("copy2").addEventListener("click", function () {
+  copyAlart("snum2");
+});
+document.getElementById("copy3").addEventListener("click", function () {
+  copyAlart("snum3");
+});
+document.getElementById("copy4").addEventListener("click", function () {
+  copyAlart("snum4");
+});
+document.getElementById("copy5").addEventListener("click", function () {
+  copyAlart("snum5");
+});
+document.getElementById("copy6").addEventListener("click", function () {
+  copyAlart("snum6");
+});
+document.getElementById("copy7").addEventListener("click", function () {
+  copyAlart("snum7");
+});
+document.getElementById("copy8").addEventListener("click", function () {
+  copyAlart("snum8");
+});
+document.getElementById("copy9").addEventListener("click", function () {
+  copyAlart("snum9");
 });
